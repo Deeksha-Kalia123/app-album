@@ -1,0 +1,5 @@
+<p>NEW ALBUM</p>
+ 
+<%= render 'form' %>
+ 
+<%= link_to 'Back', albums_path %>
