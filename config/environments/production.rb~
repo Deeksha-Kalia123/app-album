@@ -1,15 +1,15 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.serve_static_files = true
+config.serve_static_files = true
   # Code is not reloaded between requests.
   config.cache_classes = true
-  config.assets.compile = true
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
+
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
@@ -19,19 +19,20 @@ Rails.application.configure do
   # For large-scale production use, consider using a caching reverse proxy like
   # NGINX, varnish or squid.
   # config.action_dispatch.rack_cache = true
-Paperclip.options[:command_path] = "/usr/bin/convert"
-config.paperclip_defaults = {
-	:url => "/assets/images/albums:id/:styles/:basename.:extension",
-        :path => ":rails_root/public/assets/images/albums:id/:styles/:basename.:extension" 
-}
+
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  # config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
+ # config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
+Paperclip.options[:command_path] = "/usr/local/bin/"
+config.paperclip_defaults = {
+	:url => "assets/images/albums:id/:styles/:basename.:extension",
+        :path => ":rails_root/public/assets/images/albums:id/:styles/:basename.:extension" 
 
+}
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 

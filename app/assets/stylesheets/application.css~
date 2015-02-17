@@ -14,19 +14,20 @@
  *= require_self
  */
 body {
-  padding-top: 10px;
-  background-color: #C8FFC8;
+  padding-top: 20px;
+  background-color: #668080;
+background-image: image-url("/home/deeksha/Desktop")
 }
 p.log {
   text-align: right;
   font-size: 100%; 
-  background-color: #90B890;
-}
+  background-color: #B2C0C0;
+} 
 
 th {
-   text-align: center;
+   text-align:center;
    font-size: 100%; 
-   background-color: #FFFFB2;
+   background-color: #B2C0C0;
 } 
 
    

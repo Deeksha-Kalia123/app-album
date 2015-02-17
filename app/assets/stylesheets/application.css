@@ -14,8 +14,9 @@
  *= require_self
  */
 body {
-  padding-top: 10px;
+  padding-top: 20px;
   background-color: #668080;
+
 }
 p.log {
   text-align: right;
@@ -24,7 +25,7 @@ p.log {
 } 
 
 th {
-   text-align: center;
+   text-align:center;
    font-size: 100%; 
    background-color: #B2C0C0;
 } 

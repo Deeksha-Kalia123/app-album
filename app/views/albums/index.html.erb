@@ -14,7 +14,11 @@
       <td><%= album.title %></td>
       <td><%= album.description %></td>
      <td> <%= image_tag album.photo.url %></td>
-     <td> <%= link_to 'Add Photo to Album', new_album_picture_path(album) %><br /><%= link_to 'Show Album', album_pictures_path(album) %><br /><%= link_to 'Edit', edit_album_path(album) %><br /><%= link_to 'Destroy', album_path(album),
+debugger
+     <td> <%= link_to 'Add Photo to Album', new_album_picture_path(album) %><br /><%= link_to 'Show Album', album_pictures_path(album) %><br />
+<%= link_to 'Edit', edit_album_path(album) %><br />
+
+<%= link_to 'Destroy', album_path(album),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>
