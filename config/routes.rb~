@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
   get 'user/index'
+ get 'tags/:tag', to: 'articles#index', as: :tag
 
-  devise_for :users
+
+
+
+  devise_for :users, :path_names => {:sign_in => 'login', :sign_out => 'logout'}
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
    # root 'albums#new'
-   root 'albums#new'
+   root 'albums#index'
 
  resources :pictures
   # Example of regular route:

@@ -12,7 +12,7 @@ Rails.application.routes.default_url_options[:host] = 'https://enigmatic-brook-8
 
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.perform_deliveries = true
-config.action_mailer.raise_delivery_errors = false
+config.action_mailer.raise_delivery_errors = true
 config.action_mailer.default :charset => "utf-8"
 
 config.action_mailer.smtp_settings = {
@@ -21,8 +21,8 @@ port: 587,
 domain: "gmail.com",
 authentication: "plain",
 enable_starttls_auto: true,
-user_name: "dkalia.enbake@gmail.com",
-password: "dikenbake"
+user_name: "forgetpass.enbake@gmail.com",
+password: "forgetpass"
 }
 
 

@@ -10,8 +10,17 @@
     <%= f.text_field :description %>
   </p>
 
+
+<p>
+<div class="field">
+  <%= f.label :tag_list, "Tags (separated by commas)" %><br />
+  <%= f.text_field :tag_list %>
+</div>
+</p>
+
+
  <p>
-    <%= f.file_field :photo %>
+     <%= f.file_field :photo %>
   </p>
   <p>
     <%= f.submit %>

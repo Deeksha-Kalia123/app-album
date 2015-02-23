@@ -1,8 +1,6 @@
-Rails.application.routes.draw do
+ Rails.application.routes.draw do
   get 'user/index'
-  get 'tags/:tag', to: 'users#index', as: :tag
-
-
+  get 'tags/:tag', to: 'albums#index', as: :tag
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

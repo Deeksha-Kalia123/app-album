@@ -1,3 +1,2 @@
-module AlbumsHelper
-
+module AlbumsHelper 
 end
