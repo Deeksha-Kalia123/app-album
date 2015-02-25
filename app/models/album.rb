@@ -1,6 +1,7 @@
 class Album < ActiveRecord::Base
+ acts_as_paranoid
 belongs_to :user
-has_many :pictures, dependent: :destroy
+has_many :pictures
 acts_as_taggable
 has_attached_file :photo
 validates_attachment_presence :photo

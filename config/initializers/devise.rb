@@ -6,7 +6,10 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # config.secret_key = '820a86605ae32f58168416c1223f77be00fb717329e3be86a08e401b45174a6742c95e7e94467751a0a1475c6322c5fdd963cae8946f73f1587bafaca7d664f6'
 config.secret_key = '820a86605ae32f58168416c1223f77be00fb717329e3be86a08e401b45174a6742c95e7e94467751a0a1475c6322c5fdd963cae8946f73f1587bafaca7d664f6'
-
+ # using paranoid in devise
+Devise.setup do |config|
+  config.paranoid = true
+end
 
 
 

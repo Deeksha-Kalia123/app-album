@@ -13,6 +13,9 @@
       <td><%= album.title %></td>
       <td><%= album.description %></td>
      <td> <%= image_tag album.photo.url %></td>
+
+
+
  
 
 <td>Tags: <%= raw album.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></td>

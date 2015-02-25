@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     actionmailer (4.2.0)
       actionpack (= 4.2.0)
@@ -110,6 +111,8 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    paranoia (2.1.0)
+      activerecord (~> 4.0)
     pg (0.18.1)
     rack (1.6.0)
     rack-test (0.6.3)
@@ -199,6 +202,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   paperclip
+  paranoia
   pg
   rails (= 4.2.0)
   sass-rails (~> 5.0)

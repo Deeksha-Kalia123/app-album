@@ -13,6 +13,13 @@
       <td><%= album.title %></td>
       <td><%= album.description %></td>
      <td> <%= image_tag album.photo.url %></td>
+
+
+<style>
+body {
+   background-image: url('/home/deeksha/Desktop/f.jpeg');
+}
+</style>
  
 
 <td>Tags: <%= raw album.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></td>
@@ -26,7 +33,7 @@
 </tr>
 <% end %>
 </table>
-<%= link_to 'Back', album_path %> 
+<%= link_to 'Back', albums_path %> 
 
 
 

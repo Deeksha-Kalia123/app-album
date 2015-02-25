@@ -4,9 +4,6 @@ class AlbumsController < ApplicationController
     @album =Album.new
   end
 
-  
- 
-
   def create
     @album = current_user.albums.new(album_params)
     if @album.save
@@ -34,8 +31,10 @@ class AlbumsController < ApplicationController
   end
   def destroy
     @album = Album.find(params[:id])
-    @album.destroy
-
+    
+@album = Album.only_deleted.find(params[:id])
+@album.restore(@album.id, recursive: true)
+@album.destroy
    redirect_to albums_path
   end
 
