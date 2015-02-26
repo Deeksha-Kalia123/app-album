@@ -30,11 +30,10 @@ class AlbumsController < ApplicationController
     @album = Album.find(params[:id])
   end
   def destroy
-    @album = Album.find(params[:id])
-    
-@album = Album.only_deleted.find(params[:id])
-@album.restore(@album.id, recursive: true)
-@album.destroy
+    @album = Album.find(params[:id]) 
+    @album.destroy
+Album.restore(@album.id, recursive: true)
+
    redirect_to albums_path
   end
 
