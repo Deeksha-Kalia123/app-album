@@ -11,6 +11,8 @@
 </p>
  <p> <%= image_tag @album.photo.url %>
  </p>
+ <p> Album created at:<%= @album.time_at %> 
+     </p>
 <%= link_to 'Back', albums_path %>
 <%= link_to 'Edit', edit_album_path(@album) %>
 

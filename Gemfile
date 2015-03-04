@@ -10,6 +10,9 @@ gem 'paperclip'
 gem 'carrierwave'
 gem 'bootstrap-sass'
 gem 'cancan'
+gem 'combined_time_select'
+#using whenever gem
+gem 'whenever'
 # using haml gem
 gem 'haml'
 # Use Uglifier as compressor for JavaScript assets

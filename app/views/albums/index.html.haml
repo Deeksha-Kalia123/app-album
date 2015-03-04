@@ -23,7 +23,9 @@
 <%= link_to 'Show Album', album_pictures_path(album) %><br />
 <%= link_to 'Edit', edit_album_path(album) %><br />
 
-<%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' }, :remote => true, :class => 'destroy_album' %> </td></br>
+<%= link_to 'Destroy', album_path(album),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %> </td></br>
 </tr>
 <% end %>
 </table>

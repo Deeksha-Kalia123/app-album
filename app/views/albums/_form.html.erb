@@ -22,6 +22,9 @@
      <%= f.file_field :photo %>
   </p>
   <p>
+<%=f.time_select(:time_at,:default => Time.now.change(:hour => 8),:start_hour => 8, :end_hour => 20, :ampm => true)%>
+</p>
+  <p>
     <%= f.submit %>
   </p>
 
