@@ -20,7 +20,7 @@ def create
    @picture = Picture.find(params[:id])
    end
 def index
-  @picture = Picture.all
+  @picture = Picture.where(album_id: (params[:album_id]))
 end
   private
     def picture_params
